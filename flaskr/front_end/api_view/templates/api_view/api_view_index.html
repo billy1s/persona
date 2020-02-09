@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Search for a username?</h1>
+
+  <form method="POST">
+
+      {{ form.hidden_tag() }}
+      {{ form.username.label }} {{ form.username() }}
+      {{ form.submit() }}
+  </form>
+</div>
+
+    {% block result %}}
+    {% endblock %}
+{% endblock %}
+

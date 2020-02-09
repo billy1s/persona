@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Here is a list of all people.</h1>
+  <ul>
+    {% for person in people  %}
+    <li>{{person.json()}}</li>
+    {% endfor %}
+  </ul>
+
+</div>
+{% endblock %}

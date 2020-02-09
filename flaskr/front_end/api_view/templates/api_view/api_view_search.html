@@ -1,0 +1,18 @@
+{% extends "api_view_index.html" %}
+
+{% block result %}
+
+
+<table style="width:100%">
+<tr>
+    {% for k,v in person.json().items() %}
+    <th>{{k}}</th>
+    {% endfor %}
+    </tr>
+    <tr>
+    {% for k,v in person.json().items() %}
+    <td>{{v}}</td>
+    {% endfor %}
+</tr>
+</table>
+{% endblock %}
